@@ -1,0 +1,53 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TurtleBot Dashboard</title>
+  <style>
+    .image-row {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .image-box {
+      margin-right: 10px;
+    }
+    img {
+      max-height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Object Detection Dashboard</h1>
+  <div id="dashboard"></div>
+
+  <script>
+    async function loadImages() {
+      const response = await fetch('/api/images');
+      const data = await response.json();
+      const dashboard = document.getElementById('dashboard');
+      dashboard.innerHTML = '';
+
+      data.forEach(set => {
+        const row = document.createElement('div');
+        row.className = 'image-row';
+
+        ['reference', 'current', 'diff'].forEach(type => {
+          const box = document.createElement('div');
+          box.className = 'image-box';
+          box.innerHTML = `
+            <p>${type.toUpperCase()} ${set.idx}</p>
+            <img src="${set[type]}" alt="${type}">
+          `;
+          row.appendChild(box);
+        });
+
+        dashboard.appendChild(row);
+      });
+    }
+
+    loadImages();
+    setInterval(loadImages, 5000); // 5초마다 새로고침 (옵션)
+  </script>
+</body>
+</html>

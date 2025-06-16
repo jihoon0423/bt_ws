@@ -89,3 +89,4 @@ class CompareNode(py_trees.behaviour.Behaviour):
 
         self.completed = True
         return Status.SUCCESS
+#sdsadasd

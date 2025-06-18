@@ -16,6 +16,7 @@ from capture_node import CaptureNode
 from return_dock_node import ReturnDock
 from compare_node import CompareNode
 from dashboard_node import DashboardNode  
+from capture_failure_image import CaptureFailureImage
 
 def create_behavior_tree():
     """

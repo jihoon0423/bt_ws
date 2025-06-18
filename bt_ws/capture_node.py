@@ -23,7 +23,7 @@ class CaptureNode(py_trees.behaviour.Behaviour):
                  wait_before=0.5,
                  retries=3,
                  retry_interval=0.5,
-                 camera_topic="/camera/color/image_raw"):
+                 camera_topic="/oakd/rgb/preview/image_raw"):
         super(CaptureNode, self).__init__(name)
         # 정상 캡처 관련
         self.wait_before = wait_before

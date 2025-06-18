@@ -11,7 +11,7 @@ import bt_node
 from check_remaining_node import CheckRemaining
 from count_node import CountNode
 from get_waypoint_node import GetWayPoint
-from goto_waypoint_node import GotoWaypoint
+from goto_waypoint import GotoWaypoint
 from capture_node import CaptureNode
 from return_dock_node import ReturnDock
 from compare_node import CompareNode

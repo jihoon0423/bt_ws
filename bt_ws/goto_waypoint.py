@@ -6,7 +6,7 @@ from rclpy.node import Node
 from nav2_msgs.action import NavigateToPose
 from geometry_msgs.msg import PoseStamped
 from rclpy.task import Future
-from builtin_interfaces.msg import Time as TimeMsg
+from builtin_interfaces.msg import Time as TimeMsg #이건 주석처리해도 된다고 했음
 
 class GotoWaypoint(Behaviour):
     def __init__(self, name="GotoWaypoint", max_attempts=2):

@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/pointcloud_sampler/pointcloud_sampler.egg-info
+writing ../../build/pointcloud_sampler/pointcloud_sampler.egg-info/PKG-INFO
+writing dependency_links to ../../build/pointcloud_sampler/pointcloud_sampler.egg-info/dependency_links.txt
+writing entry points to ../../build/pointcloud_sampler/pointcloud_sampler.egg-info/entry_points.txt
+writing requirements to ../../build/pointcloud_sampler/pointcloud_sampler.egg-info/requires.txt
+writing top-level names to ../../build/pointcloud_sampler/pointcloud_sampler.egg-info/top_level.txt
+writing manifest file '../../build/pointcloud_sampler/pointcloud_sampler.egg-info/SOURCES.txt'
+reading manifest file '../../build/pointcloud_sampler/pointcloud_sampler.egg-info/SOURCES.txt'
+writing manifest file '../../build/pointcloud_sampler/pointcloud_sampler.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/choi/camera_ws/build/pointcloud_sampler/build
+creating /home/choi/camera_ws/build/pointcloud_sampler/build/lib
+creating /home/choi/camera_ws/build/pointcloud_sampler/build/lib/pointcloud_sampler
+copying pointcloud_sampler/__init__.py -> /home/choi/camera_ws/build/pointcloud_sampler/build/lib/pointcloud_sampler
+copying pointcloud_sampler/pointcloud_sampler_for_nav2.py -> /home/choi/camera_ws/build/pointcloud_sampler/build/lib/pointcloud_sampler
+running install
+running install_lib
+creating /home/choi/camera_ws/install/pointcloud_sampler/lib/python3.10/site-packages/pointcloud_sampler
+copying /home/choi/camera_ws/build/pointcloud_sampler/build/lib/pointcloud_sampler/__init__.py -> /home/choi/camera_ws/install/pointcloud_sampler/lib/python3.10/site-packages/pointcloud_sampler
+copying /home/choi/camera_ws/build/pointcloud_sampler/build/lib/pointcloud_sampler/pointcloud_sampler_for_nav2.py -> /home/choi/camera_ws/install/pointcloud_sampler/lib/python3.10/site-packages/pointcloud_sampler
+byte-compiling /home/choi/camera_ws/install/pointcloud_sampler/lib/python3.10/site-packages/pointcloud_sampler/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/choi/camera_ws/install/pointcloud_sampler/lib/python3.10/site-packages/pointcloud_sampler/pointcloud_sampler_for_nav2.py to pointcloud_sampler_for_nav2.cpython-310.pyc
+running install_data
+creating /home/choi/camera_ws/install/pointcloud_sampler/share/ament_index
+creating /home/choi/camera_ws/install/pointcloud_sampler/share/ament_index/resource_index
+creating /home/choi/camera_ws/install/pointcloud_sampler/share/ament_index/resource_index/packages
+copying resource/pointcloud_sampler -> /home/choi/camera_ws/install/pointcloud_sampler/share/ament_index/resource_index/packages
+copying package.xml -> /home/choi/camera_ws/install/pointcloud_sampler/share/pointcloud_sampler
+running install_egg_info
+Copying ../../build/pointcloud_sampler/pointcloud_sampler.egg-info to /home/choi/camera_ws/install/pointcloud_sampler/lib/python3.10/site-packages/pointcloud_sampler-0.0.0-py3.10.egg-info
+running install_scripts
+Installing pointcloud_sampler_for_nav2 script to /home/choi/camera_ws/install/pointcloud_sampler/lib/pointcloud_sampler
+writing list of installed files to '/home/choi/camera_ws/build/pointcloud_sampler/install.log'

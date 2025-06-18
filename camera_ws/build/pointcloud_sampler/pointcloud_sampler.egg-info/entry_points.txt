@@ -1,0 +1,3 @@
+[console_scripts]
+pointcloud_sampler_for_nav2 = pointcloud_sampler.pointcloud_sampler_for_nav2:main
+

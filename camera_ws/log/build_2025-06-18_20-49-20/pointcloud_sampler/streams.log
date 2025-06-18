@@ -1,0 +1,37 @@
+[0.330s] Invoking command in '/home/choi/camera_ws/src/pointcloud_sampler': PYTHONPATH=/home/choi/camera_ws/build/pointcloud_sampler/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/choi/camera_ws/install/pointcloud_sampler/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pointcloud_sampler build --build-base /home/choi/camera_ws/build/pointcloud_sampler/build install --record /home/choi/camera_ws/build/pointcloud_sampler/install.log --single-version-externally-managed install_data
+[0.459s] running egg_info
+[0.459s] creating ../../build/pointcloud_sampler/pointcloud_sampler.egg-info
+[0.460s] writing ../../build/pointcloud_sampler/pointcloud_sampler.egg-info/PKG-INFO
+[0.460s] writing dependency_links to ../../build/pointcloud_sampler/pointcloud_sampler.egg-info/dependency_links.txt
+[0.460s] writing entry points to ../../build/pointcloud_sampler/pointcloud_sampler.egg-info/entry_points.txt
+[0.460s] writing requirements to ../../build/pointcloud_sampler/pointcloud_sampler.egg-info/requires.txt
+[0.460s] writing top-level names to ../../build/pointcloud_sampler/pointcloud_sampler.egg-info/top_level.txt
+[0.461s] writing manifest file '../../build/pointcloud_sampler/pointcloud_sampler.egg-info/SOURCES.txt'
+[0.462s] reading manifest file '../../build/pointcloud_sampler/pointcloud_sampler.egg-info/SOURCES.txt'
+[0.462s] writing manifest file '../../build/pointcloud_sampler/pointcloud_sampler.egg-info/SOURCES.txt'
+[0.463s] running build
+[0.463s] running build_py
+[0.463s] creating /home/choi/camera_ws/build/pointcloud_sampler/build
+[0.463s] creating /home/choi/camera_ws/build/pointcloud_sampler/build/lib
+[0.463s] creating /home/choi/camera_ws/build/pointcloud_sampler/build/lib/pointcloud_sampler
+[0.463s] copying pointcloud_sampler/__init__.py -> /home/choi/camera_ws/build/pointcloud_sampler/build/lib/pointcloud_sampler
+[0.463s] copying pointcloud_sampler/pointcloud_sampler_for_nav2.py -> /home/choi/camera_ws/build/pointcloud_sampler/build/lib/pointcloud_sampler
+[0.463s] running install
+[0.463s] running install_lib
+[0.463s] creating /home/choi/camera_ws/install/pointcloud_sampler/lib/python3.10/site-packages/pointcloud_sampler
+[0.463s] copying /home/choi/camera_ws/build/pointcloud_sampler/build/lib/pointcloud_sampler/__init__.py -> /home/choi/camera_ws/install/pointcloud_sampler/lib/python3.10/site-packages/pointcloud_sampler
+[0.463s] copying /home/choi/camera_ws/build/pointcloud_sampler/build/lib/pointcloud_sampler/pointcloud_sampler_for_nav2.py -> /home/choi/camera_ws/install/pointcloud_sampler/lib/python3.10/site-packages/pointcloud_sampler
+[0.464s] byte-compiling /home/choi/camera_ws/install/pointcloud_sampler/lib/python3.10/site-packages/pointcloud_sampler/__init__.py to __init__.cpython-310.pyc
+[0.464s] byte-compiling /home/choi/camera_ws/install/pointcloud_sampler/lib/python3.10/site-packages/pointcloud_sampler/pointcloud_sampler_for_nav2.py to pointcloud_sampler_for_nav2.cpython-310.pyc
+[0.464s] running install_data
+[0.464s] creating /home/choi/camera_ws/install/pointcloud_sampler/share/ament_index
+[0.464s] creating /home/choi/camera_ws/install/pointcloud_sampler/share/ament_index/resource_index
+[0.464s] creating /home/choi/camera_ws/install/pointcloud_sampler/share/ament_index/resource_index/packages
+[0.464s] copying resource/pointcloud_sampler -> /home/choi/camera_ws/install/pointcloud_sampler/share/ament_index/resource_index/packages
+[0.464s] copying package.xml -> /home/choi/camera_ws/install/pointcloud_sampler/share/pointcloud_sampler
+[0.464s] running install_egg_info
+[0.465s] Copying ../../build/pointcloud_sampler/pointcloud_sampler.egg-info to /home/choi/camera_ws/install/pointcloud_sampler/lib/python3.10/site-packages/pointcloud_sampler-0.0.0-py3.10.egg-info
+[0.465s] running install_scripts
+[0.476s] Installing pointcloud_sampler_for_nav2 script to /home/choi/camera_ws/install/pointcloud_sampler/lib/pointcloud_sampler
+[0.476s] writing list of installed files to '/home/choi/camera_ws/build/pointcloud_sampler/install.log'
+[0.487s] Invoked command in '/home/choi/camera_ws/src/pointcloud_sampler' returned '0': PYTHONPATH=/home/choi/camera_ws/build/pointcloud_sampler/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/choi/camera_ws/install/pointcloud_sampler/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pointcloud_sampler build --build-base /home/choi/camera_ws/build/pointcloud_sampler/build install --record /home/choi/camera_ws/build/pointcloud_sampler/install.log --single-version-externally-managed install_data

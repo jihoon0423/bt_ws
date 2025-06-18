@@ -31,7 +31,7 @@ class CaptureNode(py_trees.behaviour.Behaviour):
         self.retry_interval = retry_interval
         self.normal_taken = False
 
-#병합된 코드 이미지 토픽 문자열 수정한 코(지훈님 검사부탁)
+#병합된 코드 이미지 토픽 문자열 수정(검사부탁)
 # @@ class CaptureNode(py_trees.behaviour.Behaviour):
 # -    def __init__(self,
 # -                 name="CaptureNode",

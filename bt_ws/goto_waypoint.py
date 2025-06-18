@@ -125,3 +125,23 @@ class GotoWaypoint(Behaviour):
         except Exception as e:
             self.logger.error(f"{self.name}: Exception in goal response - {e}")
             self.goal_handle = None
+            
+    def terminate(self, new_status):
+        """
+        Behaviour가 SUCCESS or FAILURE로 끝날 때마다 호출됩니다.
+        다음 웨이포인트를 위해 상태를 초기화합니다.
+        """
+        # 시도 횟수 초기화
+        self.attempt_count = 0
+        # goal 관련 플래그 초기화
+        self.sent = False
+        self.accepted = False
+        self.goal_handle = None
+        self.goal_handle_future = None
+        self.result_future = None
+
+        # blackboard 플래그도 초기화
+        try:
+            self.blackboard.goto_failed = False
+        except Exception:
+            pass

@@ -7,7 +7,6 @@ from nav2_msgs.action import NavigateToPose
 from rclpy.action import ActionClient
 from geometry_msgs.msg import PoseStamped, PoseWithCovarianceStamped
 from sensor_msgs.msg import Image
-from nav_msgs.msg import Odometry
 from cv_bridge import CvBridge
 import threading
 
@@ -38,14 +37,6 @@ class BTNode(Node):
             self.get_logger().warning(f"Failed to subscribe to camera topic '{camera_topic}': {e}")
 
 
-        self.latest_odom = None
-        self._odom_lock = threading.Lock()
-        odom_topic = '/odom' 
-        try:
-            self.create_subscription(Odometry, odom_topic, self._odom_callback, 10)
-            self.get_logger().info(f"Subscribed to odometry topic: {odom_topic}")
-        except Exception as e:
-            self.get_logger().warning(f"Failed to subscribe to odometry topic '{odom_topic}': {e}")
 
 
     def _image_callback(self, msg: Image):
@@ -70,22 +61,7 @@ class BTNode(Node):
         self.get_logger().warning(f"get_latest_image: no image after {timeout_sec}s")
         return None
 
-    def _odom_callback(self, msg: Odometry):
-        with self._odom_lock:
-            self.latest_odom = msg.pose.pose
 
-    def get_latest_odom(self, timeout_sec=5.0):
-        elapsed = 0.0
-        interval = 0.1
-        while elapsed < timeout_sec:
-            with self._odom_lock:
-                pose = self.latest_odom
-            if pose is not None:
-                return pose
-            rclpy.spin_once(self, timeout_sec=interval)
-            elapsed += interval
-        self.get_logger().warning(f"get_latest_odom: no odom after {timeout_sec}s")
-        return None
     
     def publish_initial_pose(self, pose: PoseStamped, covariance=None):
         pwc = PoseWithCovarianceStamped()
